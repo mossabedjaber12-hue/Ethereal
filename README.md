@@ -1,2 +1,0 @@
-# Ethereal
-speed test site
