@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ETH Test</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <span class="brand">⚡ ETH Test</span>
+    </div>
+    <div class="topbar-right">
+      <!-- MENU BUTTON with Discord icon -->
+      <div class="menu-wrapper">
+        <button class="top-btn" id="menuBtn">
+          <i class="fa-brands fa-discord"></i> Menu <i class="icon">▾</i>
+        </button>
+        <div class="menu-dropdown" id="menuDropdown">
+          <a href="https://discord.gg/UCMzABnSh" target="_blank" class="menu-option">
+            <i class="fa-brands fa-discord"></i> Join our Discord
+          </a>
+          <div class="menu-option soon">
+            <i class="fa-solid fa-code"></i> API Docs <span class="soon-badge">Soon</span>
+          </div>
+          <div class="menu-option soon">
+            <i class="fa-solid fa-chart-line"></i> Statistics <span class="soon-badge">Soon</span>
+          </div>
+          <div class="menu-option soon">
+            <i class="fa-solid fa-server"></i> Servers <span class="soon-badge">Soon</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LANGUAGE DROPDOWN -->
+      <div class="lang-wrapper">
+        <button class="top-btn" id="langToggle"><i class="icon">🌐</i> <span id="langLabel">English</span> <i class="icon">▾</i></button>
+        <div class="lang-dropdown" id="langDropdown"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="speed-test">
+
+      <div class="ip-display">
+        <span class="ip-label">IP:</span>
+        <span class="ip-value" id="ipDisplay">--.--.--.--</span>
+      </div>
+
+      <div class="go-container">
+        <button class="go-btn" id="goBtn"><span class="go-text">GO</span></button>
+      </div>
+
+      <!-- SPEED BAR -->
+      <div class="speed-bar-wrapper">
+        <div class="speed-bar-track">
+          <div class="speed-bar-fill" id="speedBarFill"></div>
+        </div>
+        <div class="speed-bar-labels">
+          <span>0</span>
+          <span>10</span>
+          <span>50</span>
+          <span>100</span>
+          <span>250</span>
+          <span>500</span>
+          <span>750</span>
+          <span>1000</span>
+        </div>
+        <div class="speed-bar-value" id="speedBarValue">0.0 Mbps</div>
+      </div>
+
+      <div class="status-bar">
+        <span class="status-text" id="statusText">Ready</span>
+        <div class="status-dots">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="results-grid">
+        <div class="result-item">
+          <span class="result-label" id="pingLabel">Ping</span>
+          <span class="result-value" id="pingValue">--</span>
+          <span class="result-unit">ms</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label" id="downloadLabel">Download</span>
+          <span class="result-value" id="downloadValue">--</span>
+          <span class="result-unit">Mbps</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label" id="uploadLabel">Upload</span>
+          <span class="result-value" id="uploadValue">--</span>
+          <span class="result-unit">Mbps</span>
+        </div>
+      </div>
+
+      <div class="server-info" id="serverInfo"><span>Click GO to start</span></div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
